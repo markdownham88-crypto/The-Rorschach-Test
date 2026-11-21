@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Blot Reads Back — Ten Plates at the Intersection</title>
+<meta name="description" content="Flow, Ballard and the reinvention of reality in an age of semiotic collapse — a radical reply to Cliff Kimber's Sunday Evocation #465. Mark Downham · Principia Humanitatis.">
+<meta name="author" content="Mark Downham">
+<meta property="og:type" content="article">
+<meta property="og:title" content="The Blot Reads Back — Ten Plates at the Intersection">
+<meta property="og:description" content="The feed is a Rorschach test that learns you. Flow is the one response it cannot predict.">
+<meta property="og:site_name" content="Principia Humanitatis">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#02040f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+TC:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --void:#02040f; --ink:#050a24; --deep:#0a1650; --electric:#2f7bff; --volt:#4fa3ff;
+  --glow:#9fd6ff; --white:#eaf5ff; --dim:#8aa3cf; --red:#e2342b; --rule:rgba(79,163,255,.28);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(ellipse at 50% -10%,#0d1d6e 0%,#050a24 45%,#02040f 100%) fixed;color:var(--white);
+  font:400 1.12rem/1.72 "EB Garamond",Georgia,serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+/* faint scripture page, as in a lit Bible */
+.palimpsest{position:fixed;inset:-20%;z-index:0;pointer-events:none;opacity:.055;transform:rotate(-9deg);
+  font:italic 1.5rem/1.9 "EB Garamond",serif;color:#9fc4ff;filter:blur(.6px);text-align:justify;
+  -webkit-mask-image:radial-gradient(ellipse at 50% 50%,#000 20%,transparent 75%);mask-image:radial-gradient(ellipse at 50% 50%,#000 20%,transparent 75%)}
+main,header,footer,nav{position:relative;z-index:1}
+.glow{color:#f2f9ff;text-shadow:0 0 6px rgba(120,190,255,.9),0 0 22px rgba(47,123,255,.85),0 0 60px rgba(30,80,255,.55)}
+a{color:var(--glow)}
+nav.plates{position:sticky;top:0;z-index:5;display:flex;justify-content:center;gap:.2rem;flex-wrap:wrap;padding:.5rem .4rem;
+  background:linear-gradient(#02040fee,#02040fb0);backdrop-filter:blur(6px);border-bottom:1px solid var(--rule)}
+nav.plates a{font:500 .72rem "IBM Plex Mono",monospace;letter-spacing:.08em;text-decoration:none;color:var(--dim);padding:.28rem .5rem;border:1px solid transparent;border-radius:2px}
+nav.plates a:hover,nav.plates a.on{color:var(--white);border-color:var(--rule);text-shadow:0 0 10px var(--electric)}
+nav.plates .shi{font-family:"Noto Serif TC",serif;color:var(--red);font-size:.95rem;padding:.1rem .5rem}
+
+header.front{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:3rem 1.2rem 4rem}
+.masthead{font:500 .74rem "IBM Plex Mono",monospace;letter-spacing:.32em;color:var(--dim);text-transform:uppercase}
+.masthead b{color:var(--red);font-weight:500}
+.hero-wrap{position:relative;width:min(560px,92vw);aspect-ratio:1;margin:1.4rem auto .6rem;cursor:pointer}
+.hero-wrap canvas{width:100%;height:100%;animation:breathe 9s ease-in-out infinite;filter:drop-shadow(0 0 18px rgba(47,123,255,.55))}
+.hero-wrap .axis{position:absolute;left:50%;top:4%;bottom:4%;width:1px;background:linear-gradient(transparent,rgba(226,52,43,.75),transparent);opacity:.55}
+.hero-wrap .hint{position:absolute;bottom:-.2rem;left:0;right:0;font:400 .68rem "IBM Plex Mono",monospace;letter-spacing:.18em;color:var(--dim)}
+@keyframes breathe{0%,100%{transform:scale(1);opacity:.96}50%{transform:scale(1.025);opacity:1}}
+h1{font:700 clamp(2.6rem,9vw,5.6rem)/.95 "Cormorant Garamond",serif;margin:.6rem 0 .2rem;letter-spacing:.01em}
+h1 em{font-style:italic;color:#fff}
+.sub{font:italic 400 clamp(1.1rem,3.2vw,1.55rem)/1.35 "Cormorant Garamond",serif;color:var(--glow);max-width:40rem;margin:.6rem auto}
+.byline{font:500 .76rem "IBM Plex Mono",monospace;letter-spacing:.2em;color:var(--dim);margin-top:1.4rem;text-transform:uppercase}
+.redrule{width:64px;height:3px;background:var(--red);margin:1.2rem auto}
+
+main{max-width:46rem;margin:0 auto;padding:0 1.25rem 6rem}
+section{padding:4.5rem 0 2rem;border-top:1px solid var(--rule)}
+.plate-no{font:500 .78rem "IBM Plex Mono",monospace;letter-spacing:.3em;color:var(--red);text-transform:uppercase}
+h2{font:600 clamp(2rem,6vw,3.1rem)/1.05 "Cormorant Garamond",serif;margin:.4rem 0 1.2rem}
+h3{font:600 1.45rem/1.2 "Cormorant Garamond",serif;color:var(--glow);margin:2.2rem 0 .6rem}
+p{margin:0 0 1.1rem}
+p.lede::first-letter{float:left;font:700 4.4rem/.8 "Cormorant Garamond",serif;padding:.35rem .55rem 0 0;color:#fff;text-shadow:0 0 18px var(--electric)}
+.caps{font:600 1.02rem/1.5 "IBM Plex Mono",monospace;letter-spacing:.06em;text-transform:uppercase;color:#fff;text-shadow:0 0 14px rgba(47,123,255,.8);margin:1.6rem 0;padding-left:1rem;border-left:3px solid var(--red)}
+blockquote{margin:1.6rem 0;padding:1rem 1.3rem;border-left:2px solid var(--electric);background:linear-gradient(90deg,rgba(47,123,255,.12),transparent);font-style:italic}
+blockquote cite{display:block;font:normal 400 .74rem "IBM Plex Mono",monospace;letter-spacing:.12em;color:var(--dim);margin-top:.5rem;text-transform:uppercase}
+.scripture{text-align:center;padding:2.2rem 1rem;margin:2rem 0;border:none;background:radial-gradient(ellipse at center,rgba(47,123,255,.28),transparent 70%);
+  font:italic 500 clamp(1.5rem,4.6vw,2.2rem)/1.3 "EB Garamond",serif}
+.scripture cite{font-style:normal}
+.zh{font-family:"Noto Serif TC",serif;font-style:normal}
+.zh-block{font:400 1.35rem/1.9 "Noto Serif TC",serif;text-align:center;color:#fff;text-shadow:0 0 14px var(--electric);margin:1.5rem 0 .4rem;letter-spacing:.08em}
+.zh-gloss{text-align:center;font-style:italic;color:var(--dim);font-size:1rem;margin-bottom:1.6rem}
+.big-glyph{font:700 clamp(6rem,24vw,11rem)/1 "Noto Serif TC",serif;text-align:center;color:#fff;text-shadow:0 0 20px var(--electric),0 0 70px #1f4dff;margin:1rem 0}
+figure.plate{margin:1.6rem auto 1.2rem;text-align:center}
+figure.plate canvas{width:min(420px,86vw);aspect-ratio:1;filter:drop-shadow(0 0 14px rgba(47,123,255,.5));cursor:pointer}
+figure.plate figcaption{font:400 .7rem "IBM Plex Mono",monospace;letter-spacing:.16em;color:var(--dim);text-transform:uppercase}
+.protocol{font:400 .82rem/1.55 "IBM Plex Mono",monospace;border:1px solid var(--rule);background:rgba(4,8,30,.75);padding:1rem 1.1rem;margin:1.8rem 0;position:relative}
+.protocol::before{content:"EXAMINER'S PROTOCOL";position:absolute;top:-.62rem;left:.8rem;background:#030616;padding:0 .5rem;color:var(--red);letter-spacing:.2em;font-size:.68rem}
+.protocol dl{display:grid;grid-template-columns:7.5rem 1fr;gap:.25rem .8rem;margin:0}
+.protocol dt{color:var(--volt)}
+.protocol dd{margin:0;color:#cfe3ff}
+.cover-read{display:grid;grid-template-columns:1fr 1fr;gap:.6rem 1.2rem;font-size:1rem;margin:1.2rem 0}
+.cover-read div{border-top:1px solid var(--rule);padding-top:.5rem}
+.cover-read b{font:500 .72rem "IBM Plex Mono",monospace;letter-spacing:.14em;color:var(--volt);text-transform:uppercase;display:block}
+ol.theses{counter-reset:t;list-style:none;padding:0}
+ol.theses li{counter-increment:t;position:relative;padding:1rem 0 1rem 3.6rem;border-bottom:1px solid var(--rule)}
+ol.theses li::before{content:counter(t,upper-roman);position:absolute;left:0;top:.9rem;font:700 1.6rem "Cormorant Garamond",serif;color:var(--red);width:3rem;text-align:right}
+ol.theses li strong{font:600 .95rem/1.45 "IBM Plex Mono",monospace;letter-spacing:.04em;text-transform:uppercase;color:#fff;text-shadow:0 0 12px rgba(47,123,255,.8);display:block;margin-bottom:.3rem}
+.lab{border:1px solid var(--electric);background:rgba(5,12,45,.85);padding:1.3rem;margin:2rem 0;box-shadow:0 0 40px rgba(47,123,255,.18) inset}
+.lab canvas{display:block;width:min(360px,80vw);aspect-ratio:1;margin:0 auto;filter:drop-shadow(0 0 14px rgba(47,123,255,.55))}
+.lab textarea{width:100%;min-height:4.5rem;background:#02051a;color:var(--white);border:1px solid var(--rule);font:1.05rem "EB Garamond",serif;padding:.6rem;margin-top:1rem;resize:vertical}
+.lab .btns{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.7rem}
+.lab button{font:500 .74rem "IBM Plex Mono",monospace;letter-spacing:.14em;text-transform:uppercase;background:transparent;color:var(--white);border:1px solid var(--electric);padding:.55rem .8rem;cursor:pointer}
+.lab button:hover{background:rgba(47,123,255,.2);box-shadow:0 0 16px rgba(47,123,255,.6)}
+.lab button.red{border-color:var(--red)}
+.lab .out{margin-top:1rem;font-size:1.02rem;min-height:1.5rem}
+.lab .out .code{font:600 .8rem "IBM Plex Mono",monospace;color:var(--red);letter-spacing:.14em}
+.note{font-size:.92rem;color:var(--dim)}
+footer{max-width:46rem;margin:0 auto;padding:2rem 1.25rem 5rem;border-top:1px solid var(--rule);font-size:.95rem;color:var(--dim)}
+footer h4{font:500 .74rem "IBM Plex Mono",monospace;letter-spacing:.2em;color:var(--volt);text-transform:uppercase}
+footer ul{padding-left:1.1rem}
+.sign{font:italic 600 1.3rem "Cormorant Garamond",serif;color:var(--glow);text-align:center;margin:3rem 0 1rem}
+@media (max-width:560px){.protocol dl{grid-template-columns:1fr}.protocol dt{margin-top:.4rem}.cover-read{grid-template-columns:1fr}body{font-size:1.06rem}}
+</style>
+</head>
+<body>
+<div class="palimpsest" aria-hidden="true" id="palimpsest"></div>
+
+<nav class="plates" id="nav">
+  <a href="#front"><span class="shi">十</span></a>
+  <a href="#plate-1">I</a><a href="#plate-2">II</a><a href="#plate-3">III</a><a href="#plate-4">IV</a><a href="#plate-5">V</a>
+  <a href="#plate-6">VI</a><a href="#plate-7">VII</a><a href="#plate-8">VIII</a><a href="#plate-9">IX</a><a href="#plate-10">X</a><a href="#your-plate">XI</a>
+</nav>
+
+<header class="front" id="front">
+  <div class="masthead">Principia Humanitatis · <b>Interstitial</b> · a reply to Sunday Evocation #465</div>
+  <div class="hero-wrap" id="heroWrap" title="Turn the card">
+    <canvas id="hero" width="640" height="640" aria-label="A generated, symmetrical inkblot glowing electric blue"></canvas>
+    <div class="axis"></div>
+    <div class="hint">TAP TO TURN THE CARD</div>
+  </div>
+  <h1 class="glow">The Blot <em>Reads</em> Back</h1>
+  <div class="redrule"></div>
+  <p class="sub">Ten Plates at the Intersection — Flow, Ballard, and the Reinvention of Reality in an Age of Semiotic Collapse</p>
+  <div class="byline">Mark Downham · for Cliff Kimber · London · 21 November 2026</div>
+</header>
+
+<main>
+
+<section id="overture">
+  <div class="plate-no">Overture · The Coincidence</div>
+  <h2 class="glow">Eighth of November</h2>
+  <p class="lede">Cliff, your Sunday Evocation #465 is dated 8 November 2026 and asks, across its cover, whether life is a Rorschach test. I doubt you planned it, which makes it better. Hermann Rorschach was born in Zürich on 8 November 1884. So your question went out on his hundred-and-forty-second birthday. Nobody arranged that. It turned up at a crossing of two calendars, which is exactly what your essay says intersections do: they <i>appear all the time, sometimes out of nowhere, but then everything emerges out of somewhere.</i></p>
+  <p>I take the coincidence as permission. What follows doesn't argue in a straight line. It's a set of ten plates, like Rorschach's ten cards. Each plate is a generated blot, folded along a red axis, glowing the electric blue of a Bible verse lit up in the dark, and each comes with an examiner's protocol in Rorschach's own scoring code. The examiner isn't scoring you. The examiner is scoring the world that has started scoring us.</p>
+  <p>My thesis is in the title. In Rorschach's room the blot was fixed and the viewer moved. In ours the viewer sits still and the blot moves: it's cut to fit, it learns, it gets served again. <b>The blot reads back.</b> Ballard saw that fiction had taken over reality's job. We have to add that projection has taken over perception's job. The feed now does the projecting for us and hands back what we'd have seen anyway, before we get the chance to see it.</p>
+  <p>Against this I set Flow. I don't mean the Flow of productivity hacks and performance dashboards. I mean the stranger and more dangerous Flow underneath Csikszentmihalyi's research, underneath Zhuangzi's butcher, underneath Paul's walking by faith, and underneath your own phrase <i>Born to Flow</i>. My claim is that Flow is the one way of answering a world made of blots that the blot can't predict. It's what Rorschach scored, with a capital letter of its own, as <b>M</b>.</p>
+  <div class="cover-read">
+    <div><b>The figure</b>A man at a fork in a dusty road, the blot printed on his own back. He can't see it. Everyone behind him can. Each of us is the card in someone else's test.</div>
+    <div><b>The wall of screens</b>BREAKING, a polar bear, a ring light, hearts, a politician at a lectern. One continuous blot made of a thousand rectangles.</div>
+    <div><b>The camera and the film reel</b>The old machine for producing reality, now left behind on the verge.</div>
+    <div><b>The clock and gears</b>Goldratt's arithmetic, the time that ticks on, as you put it, and that <i>you will not trouble</i>.</div>
+    <div><b>The donkey at the signpost</b>Buridan's ass, frozen between choices, or Balaam's ass, the only one who saw the angel in the road. See Plate VIII.</div>
+    <div><b>The sky</b>The great blot itself, smoke and cloud pressed into symmetry over the sun: the world as test card.</div>
+  </div>
+</section>
+
+<section id="plate-1">
+  <div class="plate-no">Plate I · Card of the Fold</div>
+  <h2 class="glow">Every Inkblot Is an Intersection</h2>
+  <figure class="plate"><canvas class="blot" data-seed="1884" width="520" height="520"></canvas><figcaption>Plate I · seed 1884 · tap to refold</figcaption></figure>
+  <p class="lede">Start with how the thing is made. Drop ink on paper, fold the paper, press, open. What you get is symmetrical because it has been <i>folded</i>, and the fold line, the vertical axis that runs down every Rorschach card, is the place where the two halves met. Literally, every inkblot is the record of an intersection. The left wing and the right wing touched along that line for a moment and then separated, and the pattern is the trace of that touch.</p>
+  <p>Swiss schoolchildren played this as a game called <i>Klecksography</i>. Rorschach played it so obsessively that his schoolfriends nicknamed him <i>Klex</i>, "Inkblot". The family tree goes back further. Leonardo told painters to stare at stained walls until landscapes and battles came out of the damp. Alexander Cozens built a whole method of landscape invention on the accidental blot. Justinus Kerner, the Swabian physician-poet, wrote verses prompted by blots that fell from his pen. Only in 1921, with the 174-page <i>Psychodiagnostik</i>, built on 300 patients and 100 controls, did the game become a diagnostic instrument. Rorschach died the following April, aged thirty-seven, before he could see what it would turn into.</p>
+  <p>Your essay has a phrase that holds the whole physics of this: lives <i>unfolding & enfolding into each other</i>. David Bohm built a cosmology on the same pair of verbs. In his <i>implicate order</i> every region of the universe is enfolded into every other, and what we take for separate things are temporary unfoldings. Deleuze wrote a book called <i>The Fold</i> arguing that the Baroque soul is made of pleats, not points. The inkblot is the plainest diagram of both. Fold it shut and the halves are one. Open it and they face each other as mirror strangers. The axis between them is <b>the space between</b>, and, as you insist, <i>it is not empty.</i></p>
+  <div class="caps">An intersection is a fold that has been opened. A self is a fold that hasn't finished opening.</div>
+  <div class="protocol"><dl>
+    <dt>Location</dt><dd>W — the whole response; plus <b>S</b>, the white space along the axis</dd>
+    <dt>Determinant</dt><dd>F (form) moving towards M (form plus kinaesthesia)</dd>
+    <dt>Content</dt><dd>Two figures touching hands across a line they can't see</dd>
+    <dt>Popular</dt><dd>"A butterfly." (The fold always produces a butterfly first.)</dd>
+    <dt>Note</dt><dd>The subject reports that the blot "was made, not found." Unusual insight. Score as an origin response.</dd>
+  </dl></div>
+</section>
+
+<section id="plate-2">
+  <div class="plate-no">Plate II · Card of the Enormous Novel</div>
+  <h2 class="glow">Ballard's Inversion</h2>
+  <figure class="plate"><canvas class="blot" data-seed="1973" width="520" height="520"></canvas><figcaption>Plate II · seed 1973 · Crash</figcaption></figure>
+  <p class="lede">In 1974 J. G. Ballard wrote an introduction for the French edition of <i>Crash</i> and put into it the diagnosis you quoted, Cliff. Its two hinges are enough: <i>"We live inside an enormous novel."</i> And then the reversal that still hasn't been absorbed: <i>"The writer's task is to invent the reality."</i></p>
+  <p>That has to be read with its context. Ballard was writing about what he called the <i>death of affect</i>: a twentieth century in which science and technology increasingly dictate the languages we speak and think in, so that we either speak them or stay mute. He described an almost infantile world where any demand, for a lifestyle, a destination, an identity, can be met instantly. And he named the marriage of reason and nightmare that leaves the world <i>ever more ambiguous</i>.</p>
+  <p>Ambiguous is the operative word. An ambiguous world is a Rorschach world. A blot has no meaning in itself, so whatever you see is <i>yours</i>. Ballard's point was that the fictions had become so total (advertising, politics run as a branch of advertising, the television pre-empting every original response) that the novelist no longer needed to invent content. The content was everywhere already, oversupplied, crowding in. What was now scarce was <b>the real</b>: some place where the projections ran into something that pushed back.</p>
+  <p>Fifty-two years later the novel has become the feed. It isn't one enormous novel any more but eight billion slightly different ones, each written in real time for one reader by a narrator that never sleeps. Ballard's sentence needs a coda: <i>we live inside an enormous Rorschach test, and the test is learning us.</i></p>
+  <div class="caps">Fiction used to be the exception inside reality. Now reality is the exception inside fiction, and it has to be produced deliberately, like a work of art.</div>
+  <div class="protocol"><dl>
+    <dt>Location</dt><dd>D — a detail: the crushed bonnet at upper left</dd>
+    <dt>Determinant</dt><dd>C — pure colour; affect with no form to hold it</dd>
+    <dt>Content</dt><dd>A collision seen from a lay-by while slowing down to look</dd>
+    <dt>Popular</dt><dd>"Breaking news."</dd>
+    <dt>Note</dt><dd>The subject recognises the card from previous exposure. The test may already be invalid for this population.</dd>
+  </dl></div>
+</section>
+
+<section id="plate-3">
+  <div class="plate-no">Plate III · Card of the Inversion</div>
+  <h2 class="glow">The Blot That Reads You</h2>
+  <figure class="plate"><canvas class="blot" data-seed="465" width="520" height="520"></canvas><figcaption>Plate III · seed 465 · the evocation number</figcaption></figure>
+  <p class="lede">Here's the structural fact that turns Ballard into prophecy. A Rorschach test works only under one condition: <b>the stimulus is the same for everyone.</b> Ten cards, standardised, printed identically, kept away from the public so nobody can rehearse. Since the blot doesn't vary, every difference in what people see is information about the people. The fixed blot is the control, and the response is the variable.</p>
+  <p>The hyper-personalised feed turns this inside out. The stimulus is now the variable: <i>tuned to you</i>, served because of your last response, adjusted with every pause of your thumb. The examiner has gone into the cards. Each blot is chosen to produce the response the previous blot predicted. That's no longer a projective test. It's a <b>closed loop</b>, a mirror that has learned to arrange its own ripples.</p>
+  <p>Two things follow, and they look like opposites.</p>
+  <h3>Everyone gives the Popular response</h3>
+  <p>Rorschach scoring has a category called <b>P</b>, the Popular: the answer that turns up again and again across a population ("bat", "butterfly", "two people"). A protocol made only of Populars tells the clinician something about conformity. The feed is a Popular-response factory. Each viewer gets a slightly different blot, and the system converges, at scale, on the handful of responses that hold attention best: outrage, fear, envy, appetite, the small dopamine of being agreed with. Hyper-personalisation and mass homogenisation aren't in conflict. <i>They are the same machine running in both directions.</i></p>
+  <h3>Semiotic collapse</h3>
+  <p>And then the signs give way. When every image is pre-fitted to what you'll do with it, images stop pointing outwards at the world and start pointing back at you. The polar bear on your cover's wall of screens doesn't refer to the Arctic. It refers to your engagement history. That's the collapse I mean: not a shortage of meaning but a meaning that has become <i>circular</i>, a sign whose referent is the viewer. Baudrillard read <i>Crash</i> as a world of pure simulation. We've gone a step further, into simulation that answers you personally.</p>
+  <p>Your cover's third question carries the whole weight of this plate: <i>Does the weight of information still inform me?</i> In 1971 Herbert Simon, the father of the <i>bounded rationality</i> that your essay watches <i>roll away toward untold possibility like thunder</i>, noted that <i>a wealth of information creates a poverty of attention.</i> The feed has industrialised that poverty. Information that only confirms the receiver doesn't <i>in-form</i> anything. It gives the receiver no new form. It only weighs on them.</p>
+  <div class="caps">In the clinic the blot was blind and the viewer was seen. In the feed the viewer is blind and the blot sees.</div>
+  <div class="protocol"><dl>
+    <dt>Location</dt><dd>Dd — an unusual tiny detail, enlarged by the algorithm until it fills the card</dd>
+    <dt>Determinant</dt><dd>CF — colour-dominant form; feeling first, shape second</dd>
+    <dt>Content</dt><dd>The subject's own face, slightly improved</dd>
+    <dt>Popular</dt><dd>All responses Popular. Distribution: total.</dd>
+    <dt>Note</dt><dd>Examiner unable to establish who administered the test to whom.</dd>
+  </dl></div>
+</section>
+
+<section id="plate-4">
+  <div class="plate-no">Plate IV · Card of the Counterfeit</div>
+  <h2 class="glow">Dark Flow and the Machine Zone</h2>
+  <figure class="plate"><canvas class="blot" data-seed="2012" width="520" height="520"></canvas><figcaption>Plate IV · seed 2012 · Addiction by Design</figcaption></figure>
+  <p class="lede">This plate is the one that makes the treatment radical, so I'll say it plainly. The feed doesn't destroy Flow. <b>It counterfeits it.</b></p>
+  <p>Every published feature of Flow, clear goals, immediate feedback, challenge matched to skill, time distorted, self-consciousness gone, action and awareness merged, can be engineered. Game designers and interface builders have read Csikszentmihalyi closely. The design writer Alex Soojung-Kim Pang has argued that they read him the way a would-be trader reads a Wall Street memoir: as a how-to manual, taking the technique and dropping the moral argument the technique was meant to serve.</p>
+  <p>The anthropologist Natasha Dow Schüll spent years among machine gamblers in Las Vegas for <i>Addiction by Design</i> (2012). One of them, Mollie, a mother and hotel worker, told Schüll she wasn't playing to win. She was playing <i>"to stay in that machine zone where nothing else matters."</i> Time gone, self gone, total absorption, instant feedback: on the checklist, it's Flow. In the life, it's erosion. Researchers studying slot-machine play have since named it <b>dark flow</b>, and the essayist Derek Thompson has written of a <b>zombie flow</b> spreading through the whole culture of the scroll.</p>
+  <p>So the cheapest version of your coaching vocabulary is already for sale. <i>Flow well</i>, you sign off, and the machines reply: <i>we can do that for you, at scale, on demand, at 2 a.m.</i></p>
+  <h3>How the counterfeit gives itself away</h3>
+  <p>The real thing and the fake share every symptom on the questionnaire. They differ in what happens to the person afterwards. Csikszentmihalyi was unambiguous: real Flow makes the self <b>more complex</b>. You come out of the climb, the score, the conversation more <i>differentiated</i> (more uniquely yourself) and more <i>integrated</i> (more joined to what's beyond you). The machine zone does the reverse. You come out of it less differentiated (a Popular response) and less integrated (more alone). It's Flow with the arrow of growth flipped. Call it <b>entropic flow</b>.</p>
+  <div class="caps">The test of Flow isn't how you felt inside it. The test is who walks out.</div>
+  <div class="protocol"><dl>
+    <dt>Location</dt><dd>W — the whole card, endlessly refreshed</dd>
+    <dt>Determinant</dt><dd>m — inanimate movement: the reels spin and the scroll falls, but no person moves</dd>
+    <dt>Content</dt><dd>A thumb pulling down to reload</dd>
+    <dt>Popular</dt><dd>"I just can't stop."</dd>
+    <dt>Note</dt><dd>All criteria for optimal experience present. Subject is not flourishing. Questionnaire validity is in doubt.</dd>
+  </dl></div>
+</section>
+
+<section id="plate-5">
+  <div class="plate-no">Plate V · Card of the Anatomy</div>
+  <h2 class="glow">What Csikszentmihalyi Actually Found</h2>
+  <figure class="plate"><canvas class="blot" data-seed="1975" width="520" height="520"></canvas><figcaption>Plate V · seed 1975 · Beyond Boredom and Anxiety</figcaption></figure>
+  <p class="lede">The concept came out of rock faces and chessboards in the early 1970s, published first in 1975 as <i>Beyond Boredom and Anxiety</i>. Its first name was clumsier and more exact: the <b>autotelic</b> experience, from <i>auto</i> (self) and <i>telos</i> (end), activity whose purpose is in itself. "Flow" was the word his interviewees kept using for it, a current that carried them, and his own team slid into it in meetings almost without noticing.</p>
+  <p>Take away the self-help gloss and the 1990 book <i>Flow: The Psychology of Optimal Experience</i> has four ideas that are far more radical than their popular afterlife suggests.</p>
+  <h3>1 · Attention is psychic energy</h3>
+  <p>Consciousness has a limited bandwidth, and <i>where attention goes, the self is built.</i> So attention isn't a resource the self spends. It's the material the self is made of. Whoever captures your attention is, in a strict sense, building you. Read that alongside Plate III and it becomes political.</p>
+  <h3>2 · Psychic entropy</h3>
+  <p>Disorder in consciousness (information that clashes with your goals, noise, threat, distraction) is <b>psychic entropy</b>. Flow is the opposite, <i>negentropy</i>: order made locally, against the general drift towards chaos. A whole chapter is titled "Cheating Chaos". Another, near the end, is called "The Power of Dissipative Structures", Prigogine's term for systems that stay ordered <i>because</i> energy passes through them. A flame. A whirlpool. A person.</p>
+  <h3>3 · Complexity is the point</h3>
+  <p>This is where your work and mine meet Csikszentmihalyi's most clearly. He defined the growth of the self as an increase in <b>complexity</b>: <i>differentiation</i> and <i>integration</i> rising together. That's a complexity theorist's definition of a living system: more distinct parts, more connected, at the same moment. Flow is the engine. Each episode pushes you a little past your previous skill, so the next episode needs a harder challenge, and the spiral climbs.</p>
+  <h3>4 · It isn't something that happens to us</h3>
+  <p>Here, Cliff, your essay and the old Hungarian say almost the same sentence. You write: <i>Intersections let us know that life isn't happening to us.</i> Csikszentmihalyi insisted that optimal experience isn't something that happens to us but something we make happen. Agency at the crossing. You add something he only hinted at: the intersection <i>wouldn't exist without our presence</i>, and <i>will be gone as soon as we leave it.</i> That's an ontology, not a mood: a <b>participatory</b> reality, made at the moment of meeting.</p>
+  <p>He also described the <b>autotelic personality</b>: people who can find Flow almost anywhere, who turn even dull or hostile conditions into a field for play. That's the figure I want to put at the centre of the feed-world. Not someone who switches the screens off, but someone who can't be <i>scored</i>, because they keep turning the test into a game of their own.</p>
+  <div class="protocol"><dl>
+    <dt>Location</dt><dd>W — integrated whole, with clearly differentiated details</dd>
+    <dt>Determinant</dt><dd>M + FC — movement with colour under form's control</dd>
+    <dt>Content</dt><dd>A climber on a white face, perfectly still, entirely in motion</dd>
+    <dt>Popular</dt><dd>None. Subject produced original responses throughout.</dd>
+    <dt>Note</dt><dd>High organisational activity. Recommend the subject not be "optimised".</dd>
+  </dl></div>
+</section>
+
+<section id="plate-6">
+  <div class="plate-no">Plate VI · Card of the Capital M</div>
+  <h2 class="glow">Form Plus Kinaesthesia</h2>
+  <figure class="plate"><canvas class="blot" data-seed="1921" width="520" height="520"></canvas><figcaption>Plate VI · seed 1921 · Psychodiagnostik</figcaption></figure>
+  <p class="lede">Now the hinge of the whole treatment. Rorschach scored responses by their <i>determinants</i>: what about the blot made you see what you saw. Form (<b>F</b>). Colour (<b>C</b>). Shading. And one more, which he treated as more important than the others and wrote about at greatest length: <b>M</b>, the human-movement response.</p>
+  <p>An M response sees a <i>person in motion</i> in a still blot: two dancers, a woman watering plants, an old man playing a saxophone. The ink doesn't move. The movement is supplied entirely by the viewer, and Rorschach noticed that people giving M often seemed to <i>feel</i> it in their own bodies. He called it <i>form plus kinaesthesia</i>. Later scorers split off animal movement (<b>FM</b>) and inanimate movement (<b>m</b>, the falling, the exploding, the drifting). M stayed the summit: associated in the literature with creativity, inner life, and the capacity for empathy. Recent brain-imaging studies have linked M responses to activity in the systems we use to simulate other people's actions in our own bodies, the mirroring circuits.</p>
+  <p>Read that with Plate V and here's the thesis of the whole work:</p>
+  <div class="caps">Flow is the M-response to existence. It's the capacity to see, in the static ambiguity of the world, a human being moving, and to feel that movement in your own body until you're the one who moves.</div>
+  <p>Then the diagnosis of the feed becomes exact. The feed is designed to produce <b>C</b> and <b>m</b>. <b>C</b>: pure colour, raw affect, alarm-red and heart-pink, feeling with no form to contain it. <b>m</b>: inanimate motion, the endless scroll, the autoplay, the reels, things moving with nobody moving them. What it can't produce, and what it quietly suppresses, is <b>M</b>: a human figure, whole, moving with intention, recognised and felt from the inside.</p>
+  <p>Rorschach also had a name for a person's balance of M against C. He called it the <i>Erlebnistypus</i>, the <b>experience type</b>: introversive (rich in M, living from inner movement) or extratensive (rich in C, living from outer stimulation). An entire civilisation is being retrained towards the extratensive pole, at a pitch Rorschach never imagined. Flow coaching, at its deepest, is <b>a counter-training of the experience type</b>: putting the human movement back into the blot.</p>
+  <div class="protocol"><dl>
+    <dt>Location</dt><dd>W</dd>
+    <dt>Determinant</dt><dd><b>M</b> — "two people, leaning towards each other, about to dance"</dd>
+    <dt>Content</dt><dd>H (whole human), active movement, cooperative</dd>
+    <dt>Popular</dt><dd>Yes, and correctly so. Some Populars are wisdom, not conformity.</dd>
+    <dt>Note</dt><dd>Subject leaned forward while answering. Kinaesthetic involvement observed.</dd>
+  </dl></div>
+</section>
+
+<section id="plate-7">
+  <div class="plate-no">Plate VII · Card of the Walk</div>
+  <h2 class="glow">Not by Sight</h2>
+  <figure class="plate"><canvas class="blot" data-seed="57" width="520" height="520"></canvas><figcaption>Plate VII · seed 57 · 2 Corinthians 5:7</figcaption></figure>
+  <blockquote class="scripture glow">For we walk by faith, not by sight.<cite class="masthead">2 Corinthians 5:7</cite></blockquote>
+  <p class="lede">The Rorschach is a test of <b>sight</b>. "What might this be?" is a question for the eyes. The feed is a regime of sight in the strictest sense, the spectacle Debord described in 1967, where life presents itself as an immense accumulation of images. Every screen on your cover asks to be <i>looked at</i>.</p>
+  <p>Paul's sentence breaks that regime with a verb of the feet. It doesn't say <i>we see by faith</i>. It says we <i>walk</i>. The opposite of sight here isn't blindness. It's <b>locomotion</b>: a knowing that happens through movement, step by step, in the body. That's kinaesthesia. That's M. In the King James Version the sentence is even set in parentheses, a step taken in the middle of a longer argument about being "at home in the body".</p>
+  <p>Ten verses on the same chapter turns: <i>"if any man be in Christ, he is a new creature: old things are passed away; behold, all things are become new."</i> Whatever one's faith, notice what that sentence does. It isn't an interpretation of the existing world. It's a claim that a <i>new</i> one has been made. That is what Ballard asked of writers: <i>invent the reality.</i> And it's the same move a few lines earlier in another letter, <i>"for now we see through a glass, darkly; but then face to face"</i>: sight as provisional, the meeting face to face as final. The blot is the dark glass. The meeting is the intersection.</p>
+  <p>The man on your cover is the image of this. He's <i>walking</i>, or about to, and the blot is on his back. He doesn't look at it. He can't. He walks. Whoever comes after sees the test he's carrying. Faith, in the ordinary as well as the theological sense, means going forward without first resolving the inkblot. Debord's own practice, the <i>dérive</i>, drifting through the city by the pull of its atmospheres, was the Situationist version of the same discipline: <b>to know by walking what you can't know by watching.</b></p>
+  <div class="caps">Sight interprets the blot. The walk turns it into a road.</div>
+  <div class="protocol"><dl>
+    <dt>Location</dt><dd>S — white space: the path between the wings</dd>
+    <dt>Determinant</dt><dd>M — "a figure walking away from me, up the middle"</dd>
+    <dt>Content</dt><dd>H, back view; face not given</dd>
+    <dt>Popular</dt><dd>No</dd>
+    <dt>Note</dt><dd>Subject declined to say what the blot "is". Said only "it goes somewhere." Score as faith response. (No such code exists. Examiner has added one.)</dd>
+  </dl></div>
+</section>
+
+<section id="plate-8">
+  <div class="plate-no">Plate VIII · Card of the Ass</div>
+  <h2 class="glow">Two Donkeys at the Crossroads</h2>
+  <figure class="plate"><canvas class="blot" data-seed="22" width="520" height="520"></canvas><figcaption>Plate VIII · seed 22 · Numbers 22</figcaption></figure>
+  <p class="lede">There's a donkey on your cover, grazing beside a signpost whose arms point in three directions. I don't think it's decoration. Two donkeys stand at the crossroads of the Western imagination, and they answer your cover's first question, <i>How does choice limit what I do with my life?</i>, in opposite ways.</p>
+  <h3>The first ass: paralysis</h3>
+  <p><b>Buridan's ass</b> (named, a little unfairly, after the medieval philosopher Jean Buridan) stands exactly halfway between two equal bales of hay and, having no reason to prefer either, starves. That's the hyper-choice condition in a fable. Infinite options, perfectly balanced by an algorithm that knows how to keep you scrolling between them, and the creature dies of the balance. Ballard foresaw it: a world where any lifestyle can be had instantly is a world where the future becomes just one alternative among many. Choice limits us by <i>symmetry</i>, and an inkblot is perfect symmetry.</p>
+  <h3>The second ass: sight</h3>
+  <p>The other donkey is <b>Balaam's</b>, in the book of Numbers. The prophet rides out to curse. On the road the animal three times sees what the prophet can't, and the King James Version tells it plainly: <i>"And the ass saw the angel of the LORD standing in the way."</i> She swerves into a field, presses against a wall, and finally lies down in a place the text calls <i>"a narrow place, where was no way to turn either to the right hand or to the left."</i> That's an intersection with no exits. Balaam beats her each time, until his own eyes are opened.</p>
+  <p>Put the two donkeys side by side. One is paralysed because every way looks the same. The other stops because one way <i>isn't the same</i>: something is standing in the road that only the humble animal can perceive. The first is a creature of the symmetrical blot. The second is a creature of the <b>real</b>, of whatever cuts across the projection and pushes back. The radical claim is that our task at the intersection isn't to choose better between symmetrical options. It's to recover the donkey's sight: <i>to notice what is actually standing in the road.</i></p>
+  <p>The ancient crossroads were never neutral. Oedipus killed his father where three roads meet. The Romans set Hecate at the <i>trivium</i>, the three-way crossing, and from the trivium we get the word <b>trivial</b>: the talk of the crossroads, the commonplace chatter of wherever paths meet. The feed is the largest trivium ever built. The question at every crossing is whether you'll pass the trivial or meet the angel.</p>
+  <div class="caps">Your cover asks: Who might I meet at the crossroads? The tradition answers: your father, your goddess, your angel, your death, your self. Rarely the person you scheduled.</div>
+  <div class="protocol"><dl>
+    <dt>Location</dt><dd>D — the lower central detail, read as an animal kneeling</dd>
+    <dt>Determinant</dt><dd>FM — animal movement: "she has stopped, and won't go on"</dd>
+    <dt>Content</dt><dd>A (animal), with an implied H that can't be seen</dd>
+    <dt>Popular</dt><dd>No</dd>
+    <dt>Note</dt><dd>Subject reports "something standing in the white space." Examiner sees nothing there. Do not dismiss.</dd>
+  </dl></div>
+</section>
+
+<section id="plate-9">
+  <div class="plate-no">Plate IX · Card of the Ten</div>
+  <h2 class="glow">十 · 道 · 間 · 遊</h2>
+  <figure class="plate"><canvas class="blot" data-seed="10" width="520" height="520"></canvas><figcaption>Plate IX · seed 10 · shí</figcaption></figure>
+  <div class="big-glyph">十</div>
+  <p class="lede">The Chinese character for <i>ten</i>, <span class="zh">十</span> <i>shí</i>, is a crossroads. Two strokes, one horizontal, one vertical, meeting at a single point. Rorschach chose <b>ten</b> cards (out of fifteen, as the story goes, because of what his printer would take on), and the classical Chinese numeral for ten is the intersection itself. The completed count is the crossing. That's why I've set ten plates and put <span class="zh">十</span> at the head of this page.</p>
+  <p>Go one character further and the crossing becomes a road: <span class="zh">道</span> <i>dào</i>, the Way, a head going forward on a path. The spine I keep returning to, <span class="zh">道理勢</span>, the Way, the patterning, and the propensity, is exactly the anatomy of an intersection: the road (<span class="zh">道</span>), the grain of things at the point where roads cross (<span class="zh">理</span>), and the momentum stored in that configuration, waiting for whoever arrives (<span class="zh">勢</span>). Your <i>temporal green light</i> is <span class="zh">勢</span>: not a signal from outside but the moment the configuration tips and movement becomes easy.</p>
+  <h3>The butcher's blade in the between</h3>
+  <p>The oldest description of Flow anywhere is in the <i>Zhuangzi</i>: Cook Ding carving an ox for Lord Wenhui, his movements so rhythmic the lord thinks it's a dance. Asked how, the cook says he no longer sees the whole ox. He follows the patterning of heaven:</p>
+  <div class="zh-block">依乎天理，批大郤，導大窾，因其固然</div>
+  <div class="zh-gloss">"I rely on the heavenly patterning, strike into the great gaps, guide the blade through the great hollows, follow things as they are."</div>
+  <div class="zh-block">以無厚入有間，恢恢乎其於遊刃必有餘地矣</div>
+  <div class="zh-gloss">"Putting what has no thickness into where there is a gap — wide and roomy, the blade has space to wander."</div>
+  <p>Look at the character for the gap: <span class="zh">間</span> <i>jiān</i>, the <i>between</i>, a gate with light in it. In its older form, <span class="zh">閒</span>, the moon is seen through the door-leaves. That's your <i>bridge of emptiness</i>, Cliff, and the ancient text agrees it isn't empty: it's where the blade moves freely. And the verb for the blade's motion is <span class="zh">遊</span> <i>yóu</i>, to wander, swim, play: the same word in the title of Zhuangzi's first chapter, <span class="zh">逍遙遊</span>, "free and easy wandering". If English had to pick one Chinese character for Flow, it would be <span class="zh">遊</span>.</p>
+  <h3>The hub of thirty spokes</h3>
+  <div class="zh-block">三十輻共一轂，當其無，有車之用</div>
+  <div class="zh-gloss">"Thirty spokes share one hub; it is in the nothing there that the cart has its use." — Laozi, ch. 11</div>
+  <p>The hub is the intersection of thirty roads. It works because of its emptiness. That's the Rorschach <b>S</b> response raised to a cosmology: seeing the <i>white space</i> rather than the ink. In a world flooded with ink, saturated with content and sign, the radical perception is the one that reads the gaps.</p>
+  <div class="caps">The feed sells you ink. Flow lives in the white.</div>
+  <div class="protocol"><dl>
+    <dt>Location</dt><dd>S — white space only; the ink is ignored</dd>
+    <dt>Determinant</dt><dd>M — "a blade moving through, without touching anything"</dd>
+    <dt>Content</dt><dd>Nothing, used</dd>
+    <dt>Popular</dt><dd>No. Rare at this level.</dd>
+    <dt>Note</dt><dd>The subject's blade has not been sharpened in nineteen years.</dd>
+  </dl></div>
+</section>
+
+<section id="plate-10">
+  <div class="plate-no">Plate X · Card of the Reinvention</div>
+  <h2 class="glow">Ten Theses for Inventing the Reality</h2>
+  <figure class="plate"><canvas class="blot" data-seed="2026" width="520" height="520"></canvas><figcaption>Plate X · seed 2026 · the colour card</figcaption></figure>
+  <p class="lede">Card X in Rorschach's set is the most colourful, scattered, many-centred, the hardest to hold together as a whole. It's the card most like the feed. So it gets the manifesto. You asked, Cliff, whether you might have to <i>reinvent reality in a world deluged with fictions of every kind</i>. Here's how I'd answer: not with a plan, but with theses to walk with.</p>
+  <ol class="theses">
+    <li><strong>The blot reads back.</strong> Assume every image fitted to you is a question about you. Answer it in a way it can't predict.</li>
+    <li><strong>Choose M over C.</strong> Before you react to the colour, find the human being moving in the ink. Feel the movement in your own body. Then answer.</li>
+    <li><strong>Distrust the zone that leaves you smaller.</strong> Real Flow leaves you more differentiated and more connected. If you come out of the absorption lonelier and more like everyone else, it was the machine zone.</li>
+    <li><strong>Read the white.</strong> The between is not empty. Score the S. The hub works because of what isn't there.</li>
+    <li><strong>Walk the blot.</strong> Sight interprets. The walk makes the road. Reality is invented by going forward without first resolving the inkblot.</li>
+    <li><strong>Be the donkey that stops.</strong> When the road suddenly refuses, look for what's standing in it. The real is whatever interrupts the projection.</li>
+    <li><strong>Refuse the symmetry.</strong> Infinite balanced choices are a starvation device. Break the tie with commitment, not information.</li>
+    <li><strong>Slow at the crossing.</strong> To your third question, <i>slow down or plough through?</i>, the Zhuangzi answers: slow until you can see the gaps, then the blade moves fast. Ballard's crash is what happens at the intersection taken at full speed with no perception at all.</li>
+    <li><strong>Make the meeting the reality.</strong> The intersection exists only while we're in it. Reality isn't recovered behind the screens. It's produced between persons, face to face, then gone.</li>
+    <li><strong>Hazard your soul.</strong> The only response that can't be predicted is the one that costs you something. Flow is no anaesthetic. It's a risk taken on purpose.</li>
+  </ol>
+  <h3>Your three questions, answered in the same key</h3>
+  <p><b>What does a temporal green light look like?</b> It isn't a signal outside you. It's <span class="zh">勢</span>, the moment the configuration of the crossing tips your way and the next step needs no force. You recognise it in the body before the mind does. Kinaesthesia comes before form.</p>
+  <p><b>Who might I meet at the intersections of my life?</b> Whoever the feed can't show you. The person outside your Popular responses. The angel in the road the donkey sees. And, as your essay says in its most beautiful turn, <i>yourself</i>: the future that doesn't exist yet meeting the memory that makes you anticipate it, so that for a moment you <i>find your way home</i>.</p>
+  <p><b>Do I slow down as I approach, or plough straight through?</b> Slow down until you can <i>see</i> (Plate VIII). Then stop seeing and <i>walk</i> (Plate VII). Then let the blade wander (Plate IX). That's the full sequence of Flow at a crossing: perception, faith, play.</p>
+  <div class="caps">This much I know: the blot was never the problem. The problem is a world that has stopped letting us supply the movement.</div>
+  <div class="protocol"><dl>
+    <dt>Location</dt><dd>W — the subject integrated all of Card X's scattered parts into one scene</dd>
+    <dt>Determinant</dt><dd>M + C + S — movement, colour and white space, held together</dd>
+    <dt>Content</dt><dd>"A crossroads at sunset. People arriving from every direction. Someone is about to speak."</dd>
+    <dt>Popular</dt><dd>No</dd>
+    <dt>Note</dt><dd>Experience type: <i>ambiequal</i>, balanced between inner movement and outer colour. Test concluded. Subject left the room first.</dd>
+  </dl></div>
+</section>
+
+<section id="your-plate">
+  <div class="plate-no">Plate XI · The Card That Isn't in the Set</div>
+  <h2 class="glow">Your Plate</h2>
+  <p>A blot generated for you alone, never seen before and never to be repeated. Write what you see. The examiner will score your determinant. Then, if you dare, switch on <b>Feed Mode</b> and watch the blot start reading back.</p>
+  <div class="lab">
+    <canvas id="labBlot" width="520" height="520" aria-label="Your generated inkblot"></canvas>
+    <textarea id="labText" placeholder="What might this be?"></textarea>
+    <div class="btns">
+      <button id="scoreBtn">Score my response</button>
+      <button id="newBtn">New card</button>
+      <button id="feedBtn" class="red">Feed mode</button>
+    </div>
+    <div class="out" id="labOut"></div>
+  </div>
+  <p class="note">Nothing you type leaves this page. The scoring is playful, a parable rather than a test, but the categories are Rorschach's own: M (human movement), FM (animal movement), m (inanimate movement), C (colour/affect), S (white space), F (form).</p>
+</section>
+
+<div class="sign glow">Pay it forward. Don't settle. Stay curious. Hazard your soul. Flow well.</div>
+
+</main>
+
+<footer>
+  <h4>Apparatus</h4>
+  <p>Written in reply to Cliff Kimber, <i>Interstitial — Sunday Evocation #465</i>, "Life as a Rorschach Test? This much I know" (8 November 2026), and his essay "Life at an intersection?". Cliff is the author of <i>Born to Flow: A Way of Being</i>.</p>
+  <ul>
+    <li>J. G. Ballard, Introduction to the French edition of <i>Crash</i> (1974).</li>
+    <li>Hermann Rorschach, <i>Psychodiagnostik</i> (Bern, 1921).</li>
+    <li>Mihaly Csikszentmihalyi, <i>Beyond Boredom and Anxiety</i> (1975); <i>Flow: The Psychology of Optimal Experience</i> (1990).</li>
+    <li>Natasha Dow Schüll, <i>Addiction by Design: Machine Gambling in Las Vegas</i> (2012).</li>
+    <li>Herbert A. Simon, "Designing Organizations for an Information-Rich World" (1971).</li>
+    <li>Guy Debord, <i>The Society of the Spectacle</i> (1967); "Theory of the Dérive" (1956).</li>
+    <li>David Bohm, <i>Wholeness and the Implicate Order</i> (1980); Gilles Deleuze, <i>The Fold</i> (1988).</li>
+    <li>Giromini et al., "Human Movement Responses to the Rorschach and Mirroring Activity: An fMRI Study", <i>Assessment</i> 26(1), 2019.</li>
+    <li><i>Zhuangzi</i>, "Nourishing the Lord of Life" (養生主); <i>Laozi</i>, ch. 11.</li>
+    <li>Scripture from the King James Version: 2 Corinthians 5:7, 5:17; 1 Corinthians 13:12; Numbers 22:23, 22:26.</li>
+  </ul>
+  <p>All inkblots on this page are generated in your browser from a numerical seed: folded, never drawn. Tap any plate to refold it. No two visitors' eleventh plates are alike.</p>
+  <p>© 2026 Mark Downham · Principia Humanitatis</p>
+</footer>
+
+<script>
+(function(){
+/* ---------- palimpsest: a lit page of scripture beneath everything ---------- */
+const kjv="For we know that if our earthly house of this tabernacle were dissolved, we have a building of God, an house not made with hands, eternal in the heavens. Therefore we are always confident, knowing that, whilst we are at home in the body, we are absent from the Lord: (For we walk by faith, not by sight:) Therefore if any man be in Christ, he is a new creature: old things are passed away; behold, all things are become new. For now we see through a glass, darkly; but then face to face. And the ass saw the angel of the LORD standing in the way, and his sword drawn in his hand: and the ass turned aside out of the way, and went into the field. And the angel of the LORD went further, and stood in a narrow place, where was no way to turn either to the right hand or to the left. ";
+document.getElementById('palimpsest').textContent=kjv.repeat(14);
+
+/* ---------- seeded PRNG ---------- */
+function mulberry(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;}}
+function hashStr(s){let h=2166136261;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619);}return h>>>0;}
+
+/* ---------- the folding machine ---------- */
+function blot(cv,seed){
+  const W=cv.width,H=cv.height,r=mulberry(seed),cx=W/2;
+  const f=document.createElement('canvas');f.width=W;f.height=H;
+  const g=f.getContext('2d');g.fillStyle='#000';g.fillRect(0,0,W,H);g.globalCompositeOperation='lighter';
+  const stamp=(x,y,rad,a)=>{if(rad<1)return;const gr=g.createRadialGradient(x,y,0,x,y,rad);gr.addColorStop(0,'rgba(255,255,255,'+a+')');gr.addColorStop(1,'rgba(255,255,255,0)');g.fillStyle=gr;g.beginPath();g.arc(x,y,rad,0,6.3);g.fill();};
+  const s=W/520;
+  // the spine: the fold itself
+  const top=H*(0.1+r()*0.08),bot=H*(0.82+r()*0.08);
+  for(let y=top;y<bot;y+=5*s){stamp(cx+(r()-0.5)*4*s,y,(8+r()*16)*s,0.22);}
+  // wings: random walks leaving the fold
+  const walkers=6+Math.floor(r()*6);
+  for(let k=0;k<walkers;k++){
+    let x=cx-r()*W*0.1,y=H*(0.14+r()*0.7),ang=Math.PI+(r()-0.5)*2.4,size=(16+r()*34)*s;
+    const steps=24+Math.floor(r()*60);
+    for(let st=0;st<steps;st++){
+      stamp(x,y,size*(0.55+r()*0.9),0.3);
+      ang+=(r()-0.5)*0.95;x+=Math.cos(ang)*size*0.33;y+=Math.sin(ang)*size*0.33;size*=0.982;
+      if(x>cx-2)x=cx-2;
+      if(x<W*0.05||y<H*0.05||y>H*0.95)break;
+      if(r()<0.06){for(let q=0;q<7;q++)stamp(x+(r()-0.5)*size*4,y+(r()-0.5)*size*4,(2+r()*7)*s,0.55);}
+      if(r()<0.04){ // a tendril
+        let tx=x,ty=y,ta=ang+(r()-0.5)*1.5;for(let u=0;u<18;u++){stamp(tx,ty,(5-u*0.22)*s,0.5);tx+=Math.cos(ta)*4*s;ty+=Math.sin(ta)*4*s;ta+=(r()-0.5)*0.4;}
+      }
+    }
+  }
+  for(let q=0;q<46;q++)stamp(cx-r()*W*0.46,H*(0.06+r()*0.88),(1.4+r()*6)*s,0.75*r());
+  const d=g.getImageData(0,0,W,H).data;
+  const ctx=cv.getContext('2d');const img=ctx.createImageData(W,H);const o=img.data;
+  const T=0.5,band=0.06;
+  for(let y=0;y<H;y++){for(let x=0;x<W;x++){
+    const sx=x<cx?x:W-1-x;const v=d[(y*W+sx)*4]/255;const i=(y*W+x)*4;
+    if(v>=T){
+      const dep=(v-T)/(1-T);
+      if(dep<band){const e=1-dep/band;o[i]=150+90*e;o[i+1]=205+40*e;o[i+2]=255;o[i+3]=255;}
+      else{const k=Math.min(1,(dep-band)*1.7);const n=((x*13+y*7)%5)*2;
+        o[i]=48*(1-k)+5+n;o[i+1]=118*(1-k)+12+n;o[i+2]=255*(1-k)+70*k;o[i+3]=255;}
+    }else{
+      const h=Math.max(0,(v-(T-0.24))/0.24);const a=h*h*150;
+      o[i]=47;o[i+1]=123;o[i+2]=255;o[i+3]=a;
+    }
+  }}
+  ctx.putImageData(img,0,0);
+}
+
+/* ---------- plates ---------- */
+const hero=document.getElementById('hero');let heroSeed=20261108;blot(hero,heroSeed);
+document.getElementById('heroWrap').addEventListener('click',()=>{heroSeed=(Math.random()*1e9)|0;blot(hero,heroSeed);});
+const plates=[...document.querySelectorAll('canvas.blot')];
+const io=('IntersectionObserver' in window)?new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting&&!e.target.dataset.done){e.target.dataset.done=1;blot(e.target,+e.target.dataset.seed);io.unobserve(e.target);}})},{rootMargin:'300px'}):null;
+plates.forEach(c=>{if(io)io.observe(c);else blot(c,+c.dataset.seed);
+  c.addEventListener('click',()=>{c.dataset.seed=(Math.random()*1e9)|0;blot(c,+c.dataset.seed);});});
+
+/* ---------- nav highlight ---------- */
+const links=[...document.querySelectorAll('nav.plates a')];
+const secs=links.map(a=>document.querySelector(a.getAttribute('href')));
+window.addEventListener('scroll',()=>{let cur=0;secs.forEach((s,i)=>{if(s&&s.getBoundingClientRect().top<120)cur=i;});links.forEach((l,i)=>l.classList.toggle('on',i===cur));},{passive:true});
+
+/* ---------- your plate ---------- */
+const lab=document.getElementById('labBlot'),txt=document.getElementById('labText'),out=document.getElementById('labOut');
+let labSeed=(Math.random()*1e9)|0,feed=0;blot(lab,labSeed);
+const has=(t,arr)=>arr.some(w=>new RegExp('\\b'+w,'i').test(t));
+const HUMAN=['man','men','woman','women','person','people','figure','dancer','child','girl','boy','king','queen','priest','monk','friend','lover','two ','someone','i ','we ','me ','he ','she ','they ','angel','face','hands'];
+const ANIMAL=['bat','butterfly','moth','bird','dog','cat','bear','wolf','donkey','ass','horse','fish','beetle','spider','crab','dragon','lion','insect','animal','owl','eagle'];
+const COLOUR=['blue','red','fire','blood','light','glow','burn','angry','anger','fear','sad','joy','storm','electric','dark','shadow','flame','sky','night','love','hate'];
+const SPACE=['space','gap','between','hole','white','empty','emptiness','path','road','door','gate','window','void','middle','nothing'];
+const MOVE=/\b\w+ing\b|\b(walk|run|dance|danc|fly|flies|leap|jump|reach|fall|turn|kneel|pray|embrace|hold|swim|climb|wander|move|moves)/i;
+function score(t){
+  if(!t.trim())return['—','Say something. Silence is a response too, but the examiner can\'t score it yet.'];
+  const mv=MOVE.test(t),hu=has(t,HUMAN),an=has(t,ANIMAL),co=has(t,COLOUR),sp=has(t,SPACE);
+  if(mv&&hu)return['M'+(sp?' + S':'')+(co?' + C':''),'Human movement. You put a living person into still ink and made them move. That\'s the Flow-response, form plus kinaesthesia. The feed can\'t manufacture this; only you can supply it.'+(sp?' And you read the white space as well: the between, which is not empty.':'')];
+  if(sp)return['S','White-space response. You saw the gap rather than the ink: Laozi\'s hub, the butcher\'s between. In a world flooded with content, that\'s the rarer perception.'];
+  if(mv&&an)return['FM','Animal movement. Something alive is moving in there, but not yet a person. Look again: is there a human figure in the motion? Balaam\'s ass saw what the prophet couldn\'t.'];
+  if(mv)return['m','Inanimate movement: things falling, spinning, flowing with nobody moving them. That\'s the feed\'s own determinant, scrolling without a scroller. Try to find who\'s moving.'];
+  if(co)return['C','Colour and affect: feeling arriving before form. That\'s what the screens are built to produce. Hold the feeling and ask what shape it is.'];
+  if(an)return['F (A)','A Popular, most likely. The fold always makes a butterfly first. Nothing wrong with that, but the examiner wonders what you\'d see on the second look.'];
+  return['F','Form response: you named a shape. Clear, controlled, careful. Now let it move.'];
+}
+document.getElementById('scoreBtn').onclick=()=>{const[c,m]=score(txt.value);out.innerHTML='<span class="code">DETERMINANT · '+c+'</span><br>'+m;};
+document.getElementById('newBtn').onclick=()=>{feed=0;labSeed=(Math.random()*1e9)|0;blot(lab,labSeed);txt.value='';out.innerHTML='';};
+const feedLines=['The feed has noted what you saw. Here is more of it.','More of what you liked. The blot is getting closer to you.','The blot now resembles your last answer. Is it still a test?','You are no longer looking at a blot. You are looking at your own profile.','Feed mode has finished learning you. Write something it could not have predicted, then press <b>New card</b>.'];
+document.getElementById('feedBtn').onclick=()=>{
+  const t=txt.value.trim()||'nothing';labSeed=(hashStr(t)+feed*3)>>>0;blot(lab,labSeed);
+  out.innerHTML='<span class="code">FEED MODE · ITERATION '+(feed+1)+'</span><br>'+feedLines[Math.min(feed,feedLines.length-1)];feed++;
+};
+})();
+</script>
+</body>
+</html>
